@@ -2,9 +2,10 @@ name: Hello World
 author: Caleb Wolfe
 description: Greets someone
 inputs:
-  who-to-greet: 'Who to greet'
-  required: true
-  defualt: Lord Taco Supreme
+  who-to-greet: 
+    description: "Who to greet"
+    required: true
+    default: 'Lord Taco Supreme'
 outputs:
   time:
     description: 'The time of gretting'
