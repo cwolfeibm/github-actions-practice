@@ -11,7 +11,7 @@ try {
     core.setOutput("time", time.toTimeString());
     console.startGroup('Logging group one');
     console.log(JSON.stringify(github, null, '\t'));
-    console.endGroup('Logging group one');
+    console.endGroup();
 }catch(error){
     core.setFailed(error.message)
 }
