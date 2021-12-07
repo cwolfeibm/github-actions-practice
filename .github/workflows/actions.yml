@@ -5,6 +5,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: ./.github/actions/hello-action
+        id: hello
         with:
           who-to-greet: "World"
       - run: |
