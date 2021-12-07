@@ -12,6 +12,7 @@ try {
     core.startGroup('Logging group one');
     console.log(JSON.stringify(github, null, '\t'));
     core.endGroup();
+    core.exportVariable("HELLO", "hello from ENV VAR")
 }catch(error){
     core.setFailed(error.message)
 }
