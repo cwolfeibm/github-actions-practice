@@ -9,9 +9,9 @@ try {
     console.log(`Hello ${name}`);
     const time = new Date();
     core.setOutput("time", time.toTimeString());
-    console.startGroup('Logging group one');
+    core.startGroup('Logging group one');
     console.log(JSON.stringify(github, null, '\t'));
-    console.endGroup();
+    core.endGroup();
 }catch(error){
     core.setFailed(error.message)
 }
