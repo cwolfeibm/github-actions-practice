@@ -1,5 +1,5 @@
-const core = requires('@actions/core');
-const github = requires('@actions/github');
+const core = require('@actions/core');
+const github = require('@actions/github');
 try {
     const name = core.getInput('who-to-greet');
     console.log('Hello ${name}');
