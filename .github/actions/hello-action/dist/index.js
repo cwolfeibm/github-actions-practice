@@ -4347,13 +4347,17 @@ module.exports = eval("require")("encoding");
 const core = __webpack_require__(694);
 const github = __webpack_require__(30);
 try {
-    
+    core.debug("MY GOD")
+    core.warning("WARN WARN WARN")
+    core.error("ERROR SET")
     const name = core.getInput('who-to-greet');
+    core.setSecret(name)
     console.log(`Hello ${name}`);
     const time = new Date();
     core.setOutput("time", time.toTimeString());
+    console.startGroup('Logging group one');
     console.log(JSON.stringify(github, null, '\t'));
-    
+    console.endGroup();
 }catch(error){
     core.setFailed(error.message)
 }
