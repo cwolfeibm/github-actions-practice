@@ -11,3 +11,4 @@ jobs:
       - run: |
           echo "Time: ${{ steps.hello.outputs.time }}"
           echo $HELLO
+      - uses: ./.github/actions/hello-docker
