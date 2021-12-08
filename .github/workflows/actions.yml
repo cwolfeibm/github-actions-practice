@@ -7,8 +7,14 @@ jobs:
       - uses: ./.github/actions/hello-action
         id: hello
         with:
-          who-to-greet: "World"
+          who-to-greet: "World-JS"
       - run: |
           echo "Time: ${{ steps.hello.outputs.time }}"
           echo $HELLO
       - uses: ./.github/actions/hello-docker
+        id: hello-docker
+        with:
+          who-to-greet: "World-Docker"
+      - run: |
+          echo "Time: ${{ steps.hello-docker.outputs.time }}"
+          echo $HELLO
