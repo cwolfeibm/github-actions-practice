@@ -21,5 +21,5 @@ echo "some stuff"
 echo "some stuff"
 echo "::endgroup::"
 
-#Export env var
-echo "::set-env name=HELLO::Hello-from-shell"
+#Export env var (seems to be deprecated)
+# echo "name=HELLO::Hello-from-shell"
