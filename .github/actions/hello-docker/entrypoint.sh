@@ -16,7 +16,9 @@ echo "::set-output name=time::$time"
 
 #Set log group
 echo "::group::Some expandable logs"
-echo "some stuff${1..3}"
+echo "some stuff"
+echo "some stuff"
+echo "some stuff"
 echo "::endgroup::"
 
 #Export env var
